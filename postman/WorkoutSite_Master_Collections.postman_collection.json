@@ -1,0 +1,321 @@
+{
+	"variables": [],
+	"info": {
+		"name": "WorkoutSite_Master_Collections",
+		"_postman_id": "2b45f29a-aece-44e4-a6f6-fcdd8f99f1e3",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/user",
+			"request": {
+				"url": "http://localhost:8080/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"userName\": \"sathiyaDash@cognizant.com\",\n        \"password\": \"password\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user",
+			"request": {
+				"url": "http://localhost:8080/user/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"userName\": \"sathiya@cognizant.com\",\n        \"password\": \"password\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user",
+			"request": {
+				"url": "http://localhost:8080/user/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"userName\": \"DivyaNanjan\",\n        \"password\": \"password\",\n        \"emailId\": \"divya@cognizant.com\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user",
+			"request": {
+				"url": "http://localhost:8080/user/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"userName\": \"DivyaNanjan\",\n        \"password\": \"password\",\n        \"emailId\": \"divya@cognizant.com\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workout/1",
+			"request": {
+				"url": "http://localhost:8080/workout/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t   \n        \"title\":\"Eliptical\",\n        \"calBurntPerUnitTime\":40,\n        \"unitTime\":\"SECONDS\",\n        \"user\":{\n        \t\"userId\":2\n        }\n        \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workout/1",
+			"request": {
+				"url": "http://localhost:8080/workout/ofUser/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t   \n        \"title\":\"Eliptical\",\n        \"calBurntPerUnitTime\":40,\n        \"unitTime\":\"SECONDS\",\n        \"user\":{\n        \t\"userId\":2\n        }\n        \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workout/1",
+			"request": {
+				"url": "http://localhost:8080/workout",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t   \n        \"title\":\"Eliptical\",\n        \"calBurntPerUnitTime\":40,\n        \"unitTime\":\"SECONDS\",\n        \"user\":{\n        \t\"userId\":2\n        }\n        \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workout/1",
+			"request": {
+				"url": "http://localhost:8080/workout/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t   \n        \"title\":\"Eliptical\",\n        \"calBurntPerUnitTime\":40,\n        \"unitTime\":\"HOURS\",\n        \"user\":{\n        \t\"userId\":2\n        }\n        \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workout/1",
+			"request": {
+				"url": "http://localhost:8080/workout/5",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\n  \t   \n        \"title\":\"Eliptical\",\n        \"calBurntPerUnitTime\":40,\n        \"unitTime\":\"HOURS\",\n        \"user\":{\n        \t\"userId\":2\n        }\n        \n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workOutTransaction/2",
+			"request": {
+				"url": "http://localhost:8080/workOutTransaction/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\":\"2018-03-01T12:09:21.345\",\n    \"endTime\": \"2018-03-01T12:20:21.345\",\n    \"duration\": 60,\n    \"calsBurnt\": 2400,\n    \"transaction_Id\": 2,\n    \"workOut\":{\n    \"workoutId\": 4,\n    \"title\": \"Eliptical\",\n    \"calBurntPerUnitTime\": 40,\n    \"unitTime\": \"SECONDS\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workOutTransaction/2",
+			"request": {
+				"url": "http://localhost:8080/workOutTransaction/ofWorkout/4",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\":\"2018-03-01T12:09:21.345\",\n    \"endTime\": \"2018-03-01T12:20:21.345\",\n    \"duration\": 60,\n    \"calsBurnt\": 2400,\n    \"transaction_Id\": 2,\n    \"workOut\":{\n    \"workoutId\": 4,\n    \"title\": \"Eliptical\",\n    \"calBurntPerUnitTime\": 40,\n    \"unitTime\": \"SECONDS\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workOutTransaction/2",
+			"request": {
+				"url": "http://localhost:8080/workOutTransaction",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\":\"2018-03-01T12:09:21.345\",\n    \"endTime\": \"2018-03-01T12:20:21.345\",\n    \"duration\": 60,\n    \"calsBurnt\": 2400,\n    \"transaction_Id\": 2,\n    \"workOut\":{\n    \"workoutId\": 4,\n    \"title\": \"Eliptical\",\n    \"calBurntPerUnitTime\": 40,\n    \"unitTime\": \"SECONDS\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workOutTransaction/2",
+			"request": {
+				"url": "http://localhost:8080/workOutTransaction/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\":\"2018-03-01T12:09:21.345\",\n    \"endTime\": \"2018-03-01T12:30:21.345\",\n    \"duration\": 60,\n    \"calsBurnt\": 2400,\n    \"transaction_Id\": 2,\n    \"workOut\":{\n    \"workoutId\": 4,\n    \"title\": \"Eliptical\",\n    \"calBurntPerUnitTime\": 40,\n    \"unitTime\": \"SECONDS\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/workOutTransaction/2",
+			"request": {
+				"url": "http://localhost:8080/workOutTransaction/2",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"startTime\":\"2018-03-01T12:09:21.345\",\n    \"endTime\": \"2018-03-01T12:30:21.345\",\n    \"duration\": 60,\n    \"calsBurnt\": 2400,\n    \"transaction_Id\": 2,\n    \"workOut\":{\n    \"workoutId\": 4,\n    \"title\": \"Eliptical\",\n    \"calBurntPerUnitTime\": 40,\n    \"unitTime\": \"SECONDS\"\n    }\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/user/login",
+			"request": {
+				"url": "http://localhost:8080/user/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "emailId",
+						"value": "mona@cognizant.com",
+						"description": ""
+					},
+					{
+						"key": "password",
+						"value": "password",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
